@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div id="tab-div">
+        <span class="tab" id="tab-add">添加</span>
+        <span class="tab is-current" id="tab-reading">在读</span>
+    </div>
+    <div id="tab-add-content">
+        <form id="add-form">
+            <p>
+                <label class="add-label" for="type">类别</label>
+                <input class="add-input" id="type" type="text">
+            </p>
+            <p>
+                <label class="add-label" for="notify-time">提醒日期</label>
+                <input class="add-input" id="notify-time" type="date">
+            </p>
+            <p>
+                <label class="add-label" for="end-time">截止日期</label>
+                <input class="add-input" id="end-time" type="date">
+            </p>
+            <p>
+                <label class="add-label" for="add-all">全选</label>
+                <input class="add-input" id="add-all" type="checkbox">
+            </p>
+        </form>
+        <p>
+            <button id="add-button">添加</button>
+        </p>
+    </div>
+    <div id="tab-reading-content">
+        <div id="list-type-div">
+            <div id="list-type-display-div">
+                <span id="type-name-span"></span>
+                <span id="type-selector" class="triangle-up"></span>
+            </div>
+            <ul id="list-type-list">
+                <li class="list-type-item" data-type="recent">即将到期</li>
+                <li class="list-type-item" data-type="time">提醒日期</li>
+                <li class="list-type-item is-current" data-type="type">类别</li>
+            </ul>
+        </div>
+        <div id="bookmarks-container">
+
+        </div>
+    </div>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="async-api.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

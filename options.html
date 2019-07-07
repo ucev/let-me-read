@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="options.css">
+    </head>
+    <body>
+        <div id="container">
+            <section class="option-section">
+                <h2 class="section-header">页面滚动到底部一定距离，自动删除标签</h2>
+                <form class="option-form">
+                    <div class="input-item">
+                        <label class="input-label" for="enable-autodelete">是否启用</label>
+                        <input class="input-element" type="checkbox" id="enable-autodelete">
+                    </div>
+                    <div class="input-item">
+                        <label class="input-label" for="autodelete-threshold">删除阀值</label>
+                        <input class="input-element" type="number" id="autodelete-threshold">px
+                    </div>
+                </form>
+            </section>
+            <section class="option-section">
+                <h2 class="section-header">标签</h2>
+                <form class="option-form">
+                    <div class="input-item">
+                        <label class="input-label" for="bookmark-dirname">标签文件夹名</label>
+                        <input class="input-element" id="bookmark-dirname">
+                    </div>
+                </form>
+            </section>
+            <div class="operation-bar">
+                <button class="operation-button button-confirm" id="save">保存</button>
+            </div>
+        </div>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="async-api.js"></script>
+        <script src="options.js"></script>
+    </body>
+</html>

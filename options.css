@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: stretch;
+}
+#container {
+    width: 500px;
+    padding: 10px 20px;
+    background-color: #E0E0E0;
+}
+.section-header {
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.input-item {
+    height: 25px;
+    line-height: 25px;
+    padding-top: 5px;
+}
+.input-label {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.input-element {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+.operation-bar {
+    margin-top: 20px;
+}
+.operation-button {
+    display: inline-block;
+    padding: 6px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+.button-confirm {
+    background-color: #66BB6A;
+    color: white;
+}

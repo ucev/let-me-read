@@ -1,0 +1,198 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 250px;
+    height: 300px;
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+#tab-div {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+}
+
+.tab {
+    width: 50%;
+    text-align: center;
+    background-color: #060606;
+    border-left: 1px solid black;
+    border-bottom: 3px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.tab:last-child {
+    border-right: 1px solid black;
+}
+
+.tab.is-current {
+    border-bottom: 3px solid #992828;
+    font-weight: bold;
+}
+
+#tab-add-content,
+#tab-reading-content {
+    padding: 0 10px;
+}
+
+#add-form {
+    width: 100%;
+}
+
+.add-label {
+    display: inline-block;
+    width: 50px;
+    font-size: 12px;
+    color: #424242;
+}
+
+.add-input {
+    display: inline-block;
+    width: 170px;
+    outline: none;
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+}
+
+#add-button {
+    border: 1px solid #BDBDBD;
+    outline: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+#tab-reading-content {
+    padding-bottom: 20px;
+}
+
+#list-type-div {
+    position: relative;
+}
+
+#list-type-display-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#list-type-display-div span {
+    line-height: 20px;
+}
+
+#type-selector {
+    cursor: pointer;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+#list-type-display-div .triangle-up {
+    transform: translateY(0px);
+}
+
+#list-type-display-div .triangle-down {
+    transform: translateY(7px);
+}
+
+#list-type-list {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    margin-top: 0;
+    padding: 5px 0px;
+    list-style-type: none;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px #222222;
+    background: white;
+}
+
+.list-type-item {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.list-type-item:hover {
+    background-color: #DDDDDD;
+}
+
+.list-type-item.is-current {
+    color: red;
+}
+
+#bookmarks-container {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+#bookmarks-container::-webkit-scrollbar {
+    display: none;
+}
+
+.bookmarks-section {
+    margin-top: 10px;
+}
+
+.bookmarks-section-title {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.bookmarks-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.bookmark-item>* {
+    display: inline-block;
+}
+
+.bookmark-title {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+    cursor: pointer;
+}
+
+.bookmark-operator {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.bookmark-operator-delete {
+    background: url(./images/delete.png) no-repeat 0 0/18px 18px;
+}
+
+.bookmark-operator-add {
+    background: url(./images/bookmark.png) no-repeat 0 0/18px 18px;
+}
